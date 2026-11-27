@@ -18,6 +18,7 @@ function App() {
         setEmployees(data);
         setLoading(false);
       } catch (error) {
+        alert("failed to fetch data");
         console.error("Error fetching employee data:", error);
         setLoading(false);
       }
